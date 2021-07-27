@@ -13,14 +13,14 @@ class ViewController: UIViewController {
 
     let imageArr = [
       UIImage(named: "1")!,
-        UIImage(named: "2")!,
-        UIImage(named: "3")!,
-        UIImage(named: "4")!,
-        UIImage(named: "5")!,
-        UIImage(named: "6")!,
-        UIImage(named: "7")!,
-        UIImage(named: "8")!,
-      UIImage(named: "9")!
+ //       UIImage(named: "2")!,
+//        UIImage(named: "3")!,
+//        UIImage(named: "4")!,
+//        UIImage(named: "5")!,
+//        UIImage(named: "6")!,
+//        UIImage(named: "7")!,
+ //       UIImage(named: "8")!,
+      UIImage(named: "2")!
     ]
 
     var currentIndex = 0
@@ -28,12 +28,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
 }
-/*
+
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return imageArr.count
@@ -53,4 +53,4 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     currentIndex = Int(scrollView.contentOffset.x / collectionView.frame.size.width)
   }
 }
-*/
+
